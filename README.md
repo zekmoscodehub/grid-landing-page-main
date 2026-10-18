@@ -75,7 +75,7 @@ GitHub Copilot in VS Code was used to help review the page structure, compare th
 
 ## Author
 
-- Moses Zekrumah - Zekmos Code Hub
+- [Moses Zekrumah - Zekmos Code Hub](https://zekmoscodehub.github.io/portfolio/)
 
 ## Acknowledgments
 
