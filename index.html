@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Grid landing page</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="shape shape-one" aria-hidden="true"></div>
+      <div class="shape shape-two" aria-hidden="true"></div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <main class="landing-card" aria-label="Bridge Collective landing page">
+        <header class="topbar">
+          <div class="brand" aria-label="Bridge Collective brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Bridge Collective</span>
+          </div>
 
-  <title>Frontend Mentor | Grid landing page</title>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+          </button>
+        </header>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <nav class="menu-panel" id="primary-navigation" aria-label="Main navigation" hidden>
+          <a href="#">About</a>
+          <a href="#">Our Work</a>
+          <a href="#">Partners</a>
+          <a href="#">Annual Report</a>
+          <a href="#">Donate</a>
+        </nav>
 
-  <!-- Nav -->
-  Bridge Collective
+        <div class="stats-grid">
+          <section class="hero-panel" aria-labelledby="hero-heading">
+            <h1 id="hero-heading">A classroom for every child.</h1>
+            <p>
+              We fund the schools, train the teachers, and measure what works — so every child we reach
+              today becomes a graduate tomorrow.
+            </p>
+          </section>
 
-  <!-- Hero -->
-  A classroom for every child.
+          <article class="stat-card stat-card--students" aria-label="Students reached">
+            <div class="card-row card-row--top">
+              <span class="sparkle" aria-hidden="true">✦</span>
+              <span class="stat-number">2.4M</span>
+            </div>
+            <div class="card-foot">
+              <h2>Students reached</h2>
+              <p>Across 31 countries since 2011.</p>
+            </div>
+          </article>
 
-  We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
+          <article class="stat-card stat-card--schools" aria-label="Schools partnered">
+            <div class="card-row card-row--top">
+              <span class="stat-sign" aria-hidden="true">+</span>
+              <span class="stat-number">1,284</span>
+            </div>
+            <div class="card-foot">
+              <h2>Schools partnered</h2>
+              <p>In 14 countries, from Kenya to Guatemala.</p>
+            </div>
+          </article>
 
-  <!-- Stats -->
-  2.4M
-  Students reached
-  Across 31 countries since 2011.
+          <article class="stat-card stat-card--teachers" aria-label="Teachers trained">
+            <div class="card-row card-row--bottom">
+              <span class="arrow" aria-hidden="true">→</span>
+              <span class="stat-number">38K</span>
+            </div>
+            <div class="card-foot">
+              <h2>Teachers trained</h2>
+              <p>Equipped with modern tools and methodology.</p>
+            </div>
+          </article>
 
-  1,284
-  Schools partnered
-  In 14 countries, from Kenya to Guatemala.
+          <article class="stat-card stat-card--graduation" aria-label="Graduation lift">
+            <div class="card-row card-row--bottom">
+              <span class="trend" aria-hidden="true">↗</span>
+              <span class="stat-number">3.1×</span>
+            </div>
+            <div class="card-foot">
+              <h2>Graduation lift</h2>
+              <p>Partner schools outperform national averages 3x.</p>
+            </div>
+          </article>
+        </div>
 
-  38K
-  Teachers trained
-  Equipped with modern tools and methodology.
-
-  3.1×
-  Graduation lift
-  Partner schools outperform national averages 3x.
-
-  <!-- Footer -->
-  © 2026 Bridge Collective
-  Registered charity 12345678
-
-  <!-- Menu panel — hidden until the hamburger is activated -->
-  About
-  Our Work
-  Partners
-  Annual Report
-  Donate
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Moses Zekrumah - Zekmos Code Hub</a>.
-  </div>
-</body>
+        <footer class="bottom-bar">
+          <p>© 2026 Bridge Collective</p>
+          <p>Registered charity 12345678</p>
+        </footer>
+      </main>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
 </html>
