@@ -7,6 +7,7 @@ menuButton.addEventListener("click", () => {
 
   menuButton.setAttribute("aria-expanded", String(!isOpen));
   menuButton.setAttribute("aria-label", isOpen ? "Open menu" : "Close menu");
+  menuButton.classList.toggle("is-open", !isOpen);
   menu.hidden = isOpen;
   landingCard.classList.toggle("menu-open", !isOpen);
 });
