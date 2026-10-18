@@ -58,7 +58,7 @@ button {
   align-items: center;
   gap: 0.5rem;
   color: var(--white);
-  font-size: 0.875rem;
+  font-size: clamp(0.875rem, calc(0.8rem + 0.15vw), 1rem);
   font-weight: 500;
 }
 
@@ -91,7 +91,7 @@ button {
 .menu-toggle span {
   display: block;
   width: 1.15rem;
-  height: 2px;
+  height: 0.125rem;
   border-radius: 2px;
   background: var(--white);
   transition: transform 160ms ease;
@@ -254,13 +254,9 @@ button {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .menu-toggle span,
+  .menu-panel a {
+    transition-duration: 0.01ms;
   }
 }
 
