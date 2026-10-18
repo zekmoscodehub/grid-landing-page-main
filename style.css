@@ -128,7 +128,7 @@ button {
 
 .menu-panel a {
   color: var(--white);
-  font-size: 1.9rem;
+  font-size: clamp(1.5rem, calc(1.1rem + 3vw), 1.9rem);
   letter-spacing: -0.055em;
   text-decoration: none;
   transition: opacity 160ms ease;
